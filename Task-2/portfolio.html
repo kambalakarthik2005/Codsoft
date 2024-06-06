@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Kambala Vikas</h1>
+        <p>Any situation i will be stoic.</p>
+    </header>
+    <section id="about">
+        <img src="img/image.png" alt="" width="400" height="400">
+        <p>we all hava ablity. the differences how we use it.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <button onclick="toggleSkills()">Show Skills</button>
+        <ul id="skills-list" style="display: none;">
+            <li>HTML</li>
+            <li>PYTHON</li>
+            <li>JAVA</li>
+           
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <button onclick="toggleProjects()">Show Projects</button>
+        <div id="projects-list" style="display: none;">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <img src="project-image-1.jpg" alt="Project 1">
+                <p>Project description 1</p>
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download>Download Resume (PDF)</a>
+    </section>
+    
+    <footer>
+        <h2>Contact</h2>
+        <p>Email:vikas.kambala2008@gmail.com</p>
+        <p>Phone: +91 70758 39707</p>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleSkills() {
+            var skillsList = document.getElementById('skills-list');
+            if (skillsList.style.display === 'none') {
+                skillsList.style.display = 'block';
+            } else {
+                skillsList.style.display = 'none';
+            }
+        }
+
+        function toggleProjects() {
+            var projectsList = document.getElementById('projects-list');
+            if (projectsList.style.display === 'none') {
+                projectsList.style.display = 'block';
+            } else {
+                projectsList.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
